@@ -8,7 +8,7 @@ export default class Ranger extends Archetype {
   constructor(name: string) {
     super(name);
 
-    this._energyType = 'mana';
+    this._energyType = 'stamina';
   }
   
   static createdArchetypeInstances(): number {
@@ -17,6 +17,6 @@ export default class Ranger extends Archetype {
   }
 
   get energyType(): EnergyType {
-    return this.energyType;
+    return this._energyType;
   }
 }

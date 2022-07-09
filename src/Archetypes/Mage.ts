@@ -17,6 +17,6 @@ export default class Mage extends Archetype {
   }
 
   get energyType(): EnergyType {
-    return this.energyType;
+    return this._energyType;
   }
 }
