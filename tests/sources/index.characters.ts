@@ -1,5 +1,5 @@
 import { player1, player2, player3 } from '../../src';
-import Character from '../../src/Character';
+import Character from '../../src/Character/Character';
 
 const func = (players: Character[]) => players.map(p => p.lifePoints);
 const result = () => {
