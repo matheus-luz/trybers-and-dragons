@@ -7,9 +7,9 @@ export default class PVP extends Battle {
   }
 
   override fight(): number {
-    this._player0.lifePoints -= this._player1.lifePoints;
-    this._player0.strength -= this._player1.strength;
-    this._player0.defense -= this._player1.defense;
-    return this._player0.lifePoints && this._player1.lifePoints;
+    this._player0.attack(this._player1); 
+    this._player1.attack(this._player0);
+
+    return super.fight();
   }
 }
