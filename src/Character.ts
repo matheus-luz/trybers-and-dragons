@@ -4,7 +4,7 @@ import Fighter, { SimpleFighter } from './Fighter/Fighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
-export default class Character implements Fighter {
+export default class Character implements SimpleFighter {
   private _race: Race;
   private _archetype: Archetype;
   private _lifePoints: number;
